@@ -25,7 +25,7 @@ const submitHandler=async(e)=>{
 if(form.photo){
   setLoading(true);
   try{
-    const response=await fetch('https://image-generator-api-crk5.onrender.com/api/v1/post',{
+    const response=await fetch('https://image-generator-api-wcqw.onrender.com/api/v1/post',{
       method:'Post',
       headers:{
         'Content-type':'application/json',
@@ -67,7 +67,7 @@ const generateImg=async ()=>{
   if(form.prompt){
   setGeneratingImg(true);
   try{
-  const response=await fetch('https://image-generator-api-crk5.onrender.com/api/v1/dalle',{
+  const response=await fetch('https://image-generator-api-wcqw.onrender.com/api/v1/dalle',{
     method:'Post',
     body:JSON.stringify(form),
     headers:{
